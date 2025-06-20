@@ -1,0 +1,110 @@
+/* === Base Setup === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0d0d0d, #1a001a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #fff;
+}
+
+/* === Login Card === */
+.login-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 25px #00ffff;
+  animation: floatIn 1s ease-out;
+}
+
+@keyframes floatIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* === Title === */
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+/* === Input Field === */
+.input-wrap {
+  margin-bottom: 20px;
+}
+
+.input-wrap input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #ff00ff;
+  background: transparent;
+  color: #ff00ff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff00ff33, inset 0 0 5px #ff00ff33;
+}
+
+/* === Hover: Slightly Expand === */
+.input-wrap input:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #ff00ff88, inset 0 0 10px #ff00ff88;
+}
+
+/* === Focus: Neon Glow === */
+.input-wrap input:focus {
+  box-shadow: 0 0 25px #ff00ff, inset 0 0 20px #ff00ff;
+}
+
+/* === Login Button === */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  background: transparent;
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff, inset 0 0 10px #00ffff;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #00ffff;
+  color: #0d0d0d;
+  box-shadow: 0 0 25px #00ffff, 0 0 40px #00ffff inset;
+}
+
+/* === Footer Text === */
+.footer-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-text a {
+  color: #39ff14;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #39ff14;
+}
